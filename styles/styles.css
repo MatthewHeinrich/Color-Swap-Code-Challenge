@@ -1,6 +1,8 @@
-.newSwapButtons{
-    /* float: right; */
-}
+
 .divIn{
     background-color: red;
+
+}
+.divOut{
+    margin: 0;
 }
