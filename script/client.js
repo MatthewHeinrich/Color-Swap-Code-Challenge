@@ -13,8 +13,9 @@ function onReady() {
 }
 
 function generateColorSwap() {
+    count++
     $('.divIn').append('<div class="divOut"><p class="counter"></p><button class="colorChange">Yellow</button><button class="deleteButton">Delete</button></div>');
-    $('.counter').append(count++);
+    $('.counter').append(count);
 }
 
 // function colorChanger() {
