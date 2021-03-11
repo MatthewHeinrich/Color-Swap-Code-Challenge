@@ -1,6 +1,6 @@
 $(document).ready(onReady);
 
-let count = 0;
+let count = 1; // variable for counter on P tag
 
 function onReady() {
     $('#generateButton').on('click', generateColorSwap);
@@ -10,14 +10,9 @@ function onReady() {
     $('.divIn').on('click', '.colorChange', function() {
         $(this).closest('div').css({'background-color': 'yellow'})
     })
-}
+} // end onReady
 
-function generateColorSwap() {
-    count++
-    $('.divIn').append('<div class="divOut"><p class="counter"></p><button class="colorChange">Yellow</button><button class="deleteButton">Delete</button></div>');
-    $('.counter').append(count);
-}
+function generateColorSwap() { 
+    $('.divIn').append(`<div class="divOut"><p>${count++}</p><button class="colorChange">Yellow</button><button class="deleteButton">Delete</button></div>`);
 
-// function colorChanger() {
-//     $(this).css({'background-color': 'yellow'});
-// }
+} // end generateColorSwap
